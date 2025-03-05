@@ -1,0 +1,39 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Admin_MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Welcome to Mail Archiever</title>
+    <link href="../App_Themes/Default.css" rel="stylesheet" type="text/css" />
+</head>
+<body background="../images/003.png">
+    <form id="form2" runat="server">
+        <table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="bordermain"
+            >
+            <tr>
+                <td valign="top">
+                    <img src="../images/baner.gif" alt="" height="250" width="1100" />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" align="center">
+                <img src="../images/adminLogo.jpg" alt="" />
+                </td>
+            </tr>
+            <tr>
+                <td height="395" valign="top" style="color: #FFFFFF">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <asp:ImageButton ID="ImageButton1" runat="server" Height="67px" 
+                            ImageUrl="~/images/home_icon.gif" onclick="ImageButton1_Click" 
+                            PostBackUrl="~/Default.aspx" />
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td height="30" bgcolor="#0033ff" class="content" align="center" style="text-align: center;
+                    color: White">
+                    © All Right Reserved</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
